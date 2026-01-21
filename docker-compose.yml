@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  realestate-app:
+    build: .
+    container_name: realestate-profile
+    ports:
+      - "8080:80"
+    restart: unless-stopped

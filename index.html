@@ -17,8 +17,8 @@
                 <p class="hero-tagline">Your trusted partner in finding the perfect property.<br>Dedicated to excellence in every transaction.</p>
                 
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">Schedule Consultation</button>
-                    <button class="btn btn-secondary">View Properties</button>
+                    <button class="btn btn-primary">Schedule consultation</button>
+                    <a href="properties.html" class="btn btn-secondary">View Properties</a>
                 </div>
                 
                 <div class="hero-contact">
@@ -37,7 +37,7 @@
                 <div class="image-card">
                     <img src="Profpic.jpg" alt="Lizelle Van Schalkwyk - Real Estate Agent" class="profile-image">
                     <div class="experience-badge">
-                        <div class="badge-number">29</div>
+                        <div class="badge-number">26</div>
                         <div class="badge-text">YEARS EXPERIENCE</div>
                     </div>
                 </div>
@@ -64,17 +64,17 @@
                     <div class="stats-grid">
                         <div class="stat-card">
                             <div class="stat-icon">🏠</div>
-                            <div class="stat-number">200+</div>
+                            <div class="stat-number">500+</div>
                             <div class="stat-label">PROPERTIES SOLD</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">👥</div>
-                            <div class="stat-number">500+</div>
+                            <div class="stat-number">300+</div>
                             <div class="stat-label">HAPPY CLIENTS</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-icon">🏆</div>
-                            <div class="stat-number">15+</div>
+                            <div class="stat-number">35+</div>
                             <div class="stat-label">INDUSTRY AWARDS</div>
                         </div>
                         <div class="stat-card">
@@ -115,17 +115,59 @@
                     <h3>Property Valuation</h3>
                     <p>Accurate and professional property assessments based on current market trends.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔑</div>
-                    <h3>Relocation Services</h3>
-                    <p>Comprehensive support for seamless transitions to your new home.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">👥</div>
-                    <h3>Investment Advisory</h3>
-                    <p>Strategic advice for building a profitable real estate portfolio.</p>
-                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <p class="contact-label">GET IN TOUCH</p>
+            <h2 class="contact-title">Let's work together</h2>
+            <p class="contact-subtitle">Ready to find your perfect property or sell your current one? Reach out and let's make it happen.</p>
+            
+            <form action="https://formspree.io/f/738bda46a74e42508d9b95bb4120f1ad" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a service</option>
+                            <option value="buying">Looking to Buy Property</option>
+                            <option value="selling">Looking to Sell Property</option>
+                            <option value="valuation">Property Valuation</option>
+                            <option value="market">Market Analysis</option>
+                            <option value="other">Other Inquiry</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your real estate needs..."></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to be contacted regarding my real estate inquiry</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
